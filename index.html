@@ -7,16 +7,26 @@
 	</head>
 	<body>
 		<div>
-			<input id="text" style="height:28px;width:260px;"/><br />
-			<input id="show" value="显示" type="button" style="height:28px;width:60px;"/>
+			<input id="text1" style="height:28px;width:98%;outline:none;border:1px solid #1AB6FF;padding-left:3px;"/>
+			<br />
+			<br />
+			<input id="text2" style="height:28px;width:98%;outline:none;border:1px solid #1AB6FF;padding-left:3px;"/>
 		</div>
 		<script type="text/javascript" src="keyboard.js"></script>
 		<script type="text/javascript">
-			var input = document.getElementById('text');
-			var key = new KeyBoard(input);
-			document.getElementById('show').onclick = function(){
-				key.show();
-			}
+		(function(){
+			var input1 = document.getElementById('text1');
+			var input2 = document.getElementById('text2');
+			
+			input1.onclick = function(){
+				new KeyBoard(input1);
+			};
+			
+			input2.onclick = function(){
+				new KeyBoard(input2);
+			};
+			
+		})();
 		</script>
 	</body>
 </html>
