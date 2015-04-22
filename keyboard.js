@@ -3,6 +3,7 @@
 	var KeyBoard = function(input, options){
 		var body = document.getElementsByTagName('body')[0];
 		var DIV_ID = options && options.divId || '__w_l_h_v_c_z_e_r_o_divid';
+		
 		if(document.getElementById(DIV_ID)){
 			body.removeChild(document.getElementById(DIV_ID));
 		}
