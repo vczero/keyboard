@@ -70,7 +70,7 @@
 			}
 		}
 		
-		this.el.onclick = addEvent;
+		//this.el.onclick = addEvent;
 		this.el.ontouchstart = addEvent;
 		body.appendChild(this.el);
 	}
