@@ -45,3 +45,6 @@
 			</script>
 		</body>
 		</html>
+		
+###三、二维码
+![222](erweima.png)
