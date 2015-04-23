@@ -15,7 +15,7 @@
 		var zIndex = options && options.zIndex || 1000;
 		var width = options && options.width || '100%';
 		var height = options && options.height || '193px';
-		var fontSize = options && options.fontSize || '12px';
+		var fontSize = options && options.fontSize || '15px';
 		var backgroundColor = options && options.backgroundColor || '#fff';
 		var TABLE_ID = options && options.table_id || 'table_0909099';
 		
@@ -33,7 +33,7 @@
 		var cssStr = '<style type="text/css">';
 		cssStr += '#' + TABLE_ID + '{text-align:center;width:100%;height:160px;border-top:1px solid #CECDCE;background-color:#FFF;}';
 		cssStr += '#' + TABLE_ID + ' td{width:33%;border:1px solid #ddd;border-right:0;border-top:0;}';
-		cssStr += '#' + TABLE_ID + ' td:hover{background-color:#1FB9FF;color:#FFF;}';
+//		cssStr += '#' + TABLE_ID + ' td:hover{background-color:#1FB9FF;color:#FFF;}';
 		cssStr += '</style>';
 		
 		//Button
@@ -71,6 +71,7 @@
 		}
 		
 		this.el.onclick = addEvent;
+		this.el.ontouchstart = addEvent;
 		body.appendChild(this.el);
 	}
 	
